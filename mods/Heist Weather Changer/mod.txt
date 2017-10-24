@@ -1,0 +1,26 @@
+{
+	"name" : "Heist Weather Changer",
+	"description" : "Changes every map's environment to either be in a rain storm or snowing.",
+	"author" : "Ellie",
+	"contact" : "",
+	"version" : "1.74",
+	"blt_version" : 2,
+    "image" : "rain.png",
+    "color" : "220 220 0",
+	"priority" : 0,
+	"updates" : [
+		{
+			"identifier" : "rain_on_all_heists"
+		}
+	],
+	"pre_hooks" : [
+        { "hook_id" : "lib/entry", "script_path" : "Core.lua" }
+    ],
+    "libraries" : [
+        {
+            "display_name" : "BeardLib",
+            "identifier" : "beardlib",
+            "optional" : "false"
+        }
+    ]		
+}

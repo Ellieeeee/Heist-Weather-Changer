@@ -1,0 +1,23 @@
+{
+	"ROAH_Options_Title" : "Heist Weather Changer Options",
+	"ROAH_Options_Desc" : "Change options of Heist Weather Changer (formerly Rain on all heists).",
+
+	"ROAH_Options_Enable_Snow_Title" : "Snow",
+	"ROAH_Options_Enable_Snow_Desc" : "Enables the Snow.",
+	"ROAH_Options_Chance_Snow_Title" : "Snow Chance",
+	"ROAH_Options_Chance_Snow_Desc" : "Set the chance of the heist having snow. If both effects are on it will pick one at random.",
+	"ROAH_Options_Enable_Rain_Title" : "Rain",
+	"ROAH_Options_Enable_Rain_Desc" : "Enables the rain.",
+	"ROAH_Options_Chance_Rain_Title" : "Rain Chance",
+	"ROAH_Options_Chance_Rain_Desc" : "Set the chance of the heist having rain. If both effects are on it will pick one at random.",
+	"ROAH_Options_Enable_Screendrops_Title" : "Screendrops",
+	"ROAH_Options_Enable_Screendrops_Desc" : "Enables raindrops on the screen. Note: Requires rain to be active.",
+	"ROAH_Options_Enable_Skybox_Title" : "Skybox",
+	"ROAH_Options_Enable_Skybox_Desc" : "Enables the skybox changes for the different weather.",
+	"ROAH_Options_Chance_Night_Title" : "Night Chance",
+	"ROAH_Options_Chance_Night_Desc" : "Set the chance of the heist being at night. Note: Requires Skybox toggle to be active.",
+	"ROAH_Options_Enable_Coats_Title" : "Raincoats",
+	"ROAH_Options_Enable_Coats_Desc" : "Enables raincoats.",
+	"ROAH_Options_Enable_Coats_On_Rain_Title" : "Raincoats only in rain",
+	"ROAH_Options_Enable_Coats_On_Rain_Desc" : "Only enable raincoats when it is raining, requires rain and raincoats toggle to be active."
+}
