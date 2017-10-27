@@ -7,6 +7,11 @@ function LevelsTweakData:init(tweak_data)
          PackageManager:load( "packages/lvl_wwh" )
      end
 
+     --sneak suits
+     if Global.load_level == true and ROAH.Options:GetValue("enable_sneak") and not PackageManager:loaded("packages/lvl_dah") then
+         PackageManager:load( "packages/lvl_dah" )
+     end
+
     --rain package
     if Global.load_level == true and rain and not PackageManager:loaded("packages/narr_glace") then
     PackageManager:load( "packages/narr_glace" )
@@ -28,8 +33,12 @@ if Global.load_level == true then
                     }
                 elseif snow then
                         self[entry_name].environment_effects = {"snow"}
-                end              
-                if ROAH.Options:GetValue("enable_coats") then
+                end           
+                if ROAH.Options:GetValue("enable_sneak") then
+                    if (Global.game_settings.single_player or not Network:is_server()) then
+                        self[entry_name].player_sequence = "spawn_prop_sneak_suit"
+                    end           
+                elseif ROAH.Options:GetValue("enable_coats") then
                     if (Global.game_settings.single_player or not Network:is_server()) and not (ROAH.Options:GetValue("enable_coats_on_rain") and not rain) then
                         self[entry_name].player_sequence = "spawn_prop_raincoat"
                     end

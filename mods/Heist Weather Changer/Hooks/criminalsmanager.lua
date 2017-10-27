@@ -1,6 +1,6 @@
 if (Global.load_level and Global.game_settings.single_player) or not Network:is_server() then return end
 --raincoats only when raining check
-if ROAH.Options:GetValue("enable_coats_on_rain") and not rain then return end
+if not ROAH.Options:GetValue("enable_sneak") and ROAH.Options:GetValue("enable_coats_on_rain") and not rain then return end
 
 
 
@@ -56,7 +56,15 @@ function CriminalsManager:add_character(name, unit, peer_id, ai, ai_loadout)
  	managers.sync:send_all_synced_units_to(peer_id)
 	local current_level = managers.job and managers.job:current_level_id()
 	if current_level then
-		if ROAH.Options:GetValue("enable_coats") then
+		if ROAH.Options:GetValue("enable_sneak") then
+			local sequence = "spawn_prop_sneak_suit"
+			if sequence and alive(unit) then
+				local unit_damage = not unit:damage() and unit:camera() and unit:camera():camera_unit():damage()
+				if unit_damage then
+					unit_damage:run_sequence_simple(sequence)
+				end
+			end
+		elseif ROAH.Options:GetValue("enable_coats") then
 			local sequence = "spawn_prop_raincoat"
 			if sequence and alive(unit) then
 				local unit_damage = not unit:damage() and unit:camera() and unit:camera():camera_unit():damage()

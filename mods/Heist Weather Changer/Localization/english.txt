@@ -18,6 +18,8 @@
 	"ROAH_Options_Chance_Night_Desc" : "Set the chance of the heist being at night. Note: Requires Skybox toggle to be active.",
 	"ROAH_Options_Enable_Coats_Title" : "Raincoats",
 	"ROAH_Options_Enable_Coats_Desc" : "Enables raincoats.",
+	"ROAH_Options_Enable_Sneak_Title" : "Sneak Suits",
+	"ROAH_Options_Enable_Sneak_Desc" : "Enables sneaking suits, will replace raincoats.",
 	"ROAH_Options_Enable_Coats_On_Rain_Title" : "Raincoats only in rain",
 	"ROAH_Options_Enable_Coats_On_Rain_Desc" : "Only enable raincoats when it is raining, requires rain and raincoats toggle to be active."
 }
