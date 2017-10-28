@@ -1,0 +1,14 @@
+--GENERAL--
+Misu and Nepgearsy - Posing in the preview images and helping with testing.
+Martini - For providing the environment replacer script that was used in Restoration.
+
+--CODING--
+Nepgearsy - Help in general with many different parts of the code.
+Dr_Newbie - Help with fixing the screendrops effect working properly.
+White Ranger - Fixing the rain effect indoors.
+
+--SPECIAL THANKS--
+M0rtifer - Showing the mod off on YouTube.
+Hoxton2017 - Showing the mod off on YouTube.
+SyfeKS - Showing the mod off on YouTube.
+Sickdistic - Showing the mod off on YouTube.
