@@ -1,7 +1,6 @@
 if Network:is_server() then return end
 
---raincoats only when raining check
-if not ROAH.Options:GetValue("enable_sneak") and ROAH.Options:GetValue("enable_coats_on_rain") and not rain then return end
+if not ROAH.Options:GetValue("enable_sneak") and not coats then return end
 
 
 function NetworkPeer:_update_equipped_armor()
@@ -14,7 +13,7 @@ function NetworkPeer:_update_equipped_armor()
 		self._equipped_armor_id = new_armor_id
         local armor_sequence = tweak_data.blackmarket.armors[new_armor_id].sequence
         local map = Global.load_level and Global.level_data.level_id
-		if ROAH.Options:GetValue("enable_coats") or ROAH.Options:GetValue("enable_sneak") or map == "glace" or map == "dah" then
+		if ROAH.Options:GetValue("enable_coats") or ROAH.Options:GetValue("enable_sneak") or map == "glace" or map == "dah" or map == "wwh" then
 			armor_sequence = nil
 		end
 		if armor_sequence and self._unit:damage() and self._unit:damage():has_sequence(armor_sequence) then

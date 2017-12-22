@@ -21,12 +21,14 @@ end
 
 --global variables for rng
 --we want seperate rolls for each, otherwise it will result in always both on/off scenarios
+--another variable for coats which is not controlled by rng
 local NightRNGesus = math.random(0,100)
 local RainRNGesus = math.random(0,100)
 local SnowRNGesus = math.random(0,100)
 night = false
 rain = false
 snow = false
+coats = false
 
 --rng roll and check for options. set global to true if rngesus loves you
 if ROAH.Options:GetValue("enable_skybox") then
@@ -65,4 +67,13 @@ local map = Global.load_level and Global.level_data.level_id
 if map == "glace" or map == "wwh" or map == "chill" or map == "chill_combat" then
 	rain = false
 	snow = false
+end
+
+if ROAH.Options:GetValue("enable_coats") then
+	--if no weather effect and coats only in weather option, turn coats off. otherwise turn them on
+	if not rain and not snow and ROAH.Options:GetValue("enable_coats_on_rain") then
+		coats = false
+	else
+		coats = true
+	end
 end

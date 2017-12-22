@@ -38,8 +38,17 @@ if Global.load_level == true then
                     if (Global.game_settings.single_player or not Network:is_server()) then
                         self[entry_name].player_sequence = "spawn_prop_sneak_suit"
                     end           
-                elseif ROAH.Options:GetValue("enable_coats") then
-                    if (Global.game_settings.single_player or not Network:is_server()) and not (ROAH.Options:GetValue("enable_coats_on_rain") and not rain) then
+                elseif coats then
+                    --snow coats override raincoats
+                    if snow then
+                        if (Global.game_settings.single_player or not Network:is_server()) then
+                            self[entry_name].player_sequence = "spawn_prop_winter_suit"
+                        end
+                    elseif (Global.game_settings.single_player or not Network:is_server()) then
+                        --just to make sure this is loaded. its possible to have this happen without loading the package otherwise
+                        if not PackageManager:loaded("packages/narr_glace") then
+                            PackageManager:load( "packages/narr_glace" )
+                        end
                         self[entry_name].player_sequence = "spawn_prop_raincoat"
                     end
                 end

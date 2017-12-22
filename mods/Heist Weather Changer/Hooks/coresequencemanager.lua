@@ -13,6 +13,13 @@ if job == "berry" or job == "chew" then return end
 		if ROAH.Options:GetValue("enable_skybox") and snow and night then
 	        --eyes.exe has stopped working
 	        --i can confirm that
+			BeardLib:ReplaceScriptData("mods/Heist Weather Changer/scriptdata/blizzard_night.custom_xml", "custom_xml", "units/pd2_dlc_rvd/environments/pd2_env_rvd/pd2_env_rvd_day1_inside", "environment")
+			BeardLib:ReplaceScriptData("mods/Heist Weather Changer/scriptdata/blizzard_night.custom_xml", "custom_xml", "units/pd2_dlc_rvd/environments/pd2_env_rvd/pd2_env_rvd_day1_exterior", "environment")
+			BeardLib:ReplaceScriptData("mods/Heist Weather Changer/scriptdata/blizzard_night.custom_xml", "custom_xml", "units/pd2_dlc_rvd/environments/pd2_env_rvd/pd2_env_rvd_day2_inside", "environment")
+			BeardLib:ReplaceScriptData("mods/Heist Weather Changer/scriptdata/blizzard_night.custom_xml", "custom_xml", "units/pd2_dlc_rvd/environments/pd2_env_rvd/pd2_env_rvd_day2_exterior", "environment")
+			BeardLib:ReplaceScriptData("mods/Heist Weather Changer/scriptdata/blizzard_night.custom_xml", "custom_xml", "units/pd2_dlc_brb/environments/pd2_env_brb_interior_bank", "environment")
+			BeardLib:ReplaceScriptData("mods/Heist Weather Changer/scriptdata/blizzard_night.custom_xml", "custom_xml", "units/pd2_dlc_brb/environments/pd2_env_brb_exterior_v4", "environment")
+			BeardLib:ReplaceScriptData("mods/Heist Weather Changer/scriptdata/blizzard_night.custom_xml", "custom_xml", "units/pd2_dlc_dah/environments/pd2_dah_outdoor/pd2_dah_outdoor", "environment")
 			BeardLib:ReplaceScriptData("mods/Heist Weather Changer/scriptdata/blizzard_night.custom_xml", "custom_xml", "environments/pd2_env_lxy_gala_01/pd2_env_lxy_gala_01", "environment")
 			BeardLib:ReplaceScriptData("mods/Heist Weather Changer/scriptdata/blizzard_night.custom_xml", "custom_xml", "environments/pd2_env_lxy_gala_02/pd2_env_lxy_gala_02", "environment")
 			BeardLib:ReplaceScriptData("mods/Heist Weather Changer/scriptdata/blizzard_night.custom_xml", "custom_xml", "environments/pd2_env_lxy_lowerdeck_01/pd2_env_lxy_lowerdeck_01", "environment")
@@ -151,6 +158,13 @@ if job == "berry" or job == "chew" then return end
 			elseif ROAH.Options:GetValue("enable_skybox") and snow and not night then
 
 			--rain and skybox are on, but you got day you lucky mofo
+			BeardLib:ReplaceScriptData("mods/Heist Weather Changer/scriptdata/blizzard.custom_xml", "custom_xml", "units/pd2_dlc_rvd/environments/pd2_env_rvd/pd2_env_rvd_day1_inside", "environment")
+			BeardLib:ReplaceScriptData("mods/Heist Weather Changer/scriptdata/blizzard.custom_xml", "custom_xml", "units/pd2_dlc_rvd/environments/pd2_env_rvd/pd2_env_rvd_day1_exterior", "environment")
+			BeardLib:ReplaceScriptData("mods/Heist Weather Changer/scriptdata/blizzard.custom_xml", "custom_xml", "units/pd2_dlc_rvd/environments/pd2_env_rvd/pd2_env_rvd_day2_inside", "environment")
+			BeardLib:ReplaceScriptData("mods/Heist Weather Changer/scriptdata/blizzard.custom_xml", "custom_xml", "units/pd2_dlc_rvd/environments/pd2_env_rvd/pd2_env_rvd_day2_exterior", "environment")
+			BeardLib:ReplaceScriptData("mods/Heist Weather Changer/scriptdata/blizzard.custom_xml", "custom_xml", "units/pd2_dlc_brb/environments/pd2_env_brb_interior_bank", "environment")
+			BeardLib:ReplaceScriptData("mods/Heist Weather Changer/scriptdata/blizzard.custom_xml", "custom_xml", "units/pd2_dlc_brb/environments/pd2_env_brb_exterior_v4", "environment")
+			BeardLib:ReplaceScriptData("mods/Heist Weather Changer/scriptdata/blizzard.custom_xml", "custom_xml", "units/pd2_dlc_dah/environments/pd2_dah_outdoor/pd2_dah_outdoor", "environment")
 			BeardLib:ReplaceScriptData("mods/Heist Weather Changer/scriptdata/blizzard.custom_xml", "custom_xml", "environments/pd2_env_lxy_gala_01/pd2_env_lxy_gala_01", "environment")
 			BeardLib:ReplaceScriptData("mods/Heist Weather Changer/scriptdata/blizzard.custom_xml", "custom_xml", "environments/pd2_env_lxy_gala_02/pd2_env_lxy_gala_02", "environment")
 			BeardLib:ReplaceScriptData("mods/Heist Weather Changer/scriptdata/blizzard.custom_xml", "custom_xml", "environments/pd2_env_lxy_lowerdeck_01/pd2_env_lxy_lowerdeck_01", "environment")
@@ -295,6 +309,13 @@ if job == "berry" or job == "chew" then return end
 			elseif ROAH.Options:GetValue("enable_skybox") and rain and night then
 	        --eyes.exe has stopped working
 	        --i can confirm that
+			BeardLib:ReplaceScriptData("mods/Heist Weather Changer/scriptdata/storm_night.custom_xml", "custom_xml", "units/pd2_dlc_rvd/environments/pd2_env_rvd/pd2_env_rvd_day1_inside", "environment")
+			BeardLib:ReplaceScriptData("mods/Heist Weather Changer/scriptdata/storm_night.custom_xml", "custom_xml", "units/pd2_dlc_rvd/environments/pd2_env_rvd/pd2_env_rvd_day1_exterior", "environment")
+			BeardLib:ReplaceScriptData("mods/Heist Weather Changer/scriptdata/storm_night.custom_xml", "custom_xml", "units/pd2_dlc_rvd/environments/pd2_env_rvd/pd2_env_rvd_day2_inside", "environment")
+			BeardLib:ReplaceScriptData("mods/Heist Weather Changer/scriptdata/storm_night.custom_xml", "custom_xml", "units/pd2_dlc_rvd/environments/pd2_env_rvd/pd2_env_rvd_day2_exterior", "environment")
+			BeardLib:ReplaceScriptData("mods/Heist Weather Changer/scriptdata/storm_night.custom_xml", "custom_xml", "units/pd2_dlc_brb/environments/pd2_env_brb_interior_bank", "environment")
+			BeardLib:ReplaceScriptData("mods/Heist Weather Changer/scriptdata/storm_night.custom_xml", "custom_xml", "units/pd2_dlc_brb/environments/pd2_env_brb_exterior_v4", "environment")
+			BeardLib:ReplaceScriptData("mods/Heist Weather Changer/scriptdata/storm_night.custom_xml", "custom_xml", "units/pd2_dlc_dah/environments/pd2_dah_outdoor/pd2_dah_outdoor", "environment")
 			BeardLib:ReplaceScriptData("mods/Heist Weather Changer/scriptdata/storm_night.custom_xml", "custom_xml", "environments/pd2_env_lxy_gala_01/pd2_env_lxy_gala_01", "environment")
 			BeardLib:ReplaceScriptData("mods/Heist Weather Changer/scriptdata/storm_night.custom_xml", "custom_xml", "environments/pd2_env_lxy_gala_02/pd2_env_lxy_gala_02", "environment")
 			BeardLib:ReplaceScriptData("mods/Heist Weather Changer/scriptdata/storm_night.custom_xml", "custom_xml", "environments/pd2_env_lxy_lowerdeck_01/pd2_env_lxy_lowerdeck_01", "environment")
@@ -433,6 +454,13 @@ if job == "berry" or job == "chew" then return end
 			elseif ROAH.Options:GetValue("enable_skybox") and rain and not night then
 
 			--rain and skybox are on, but you got day you lucky mofo
+			BeardLib:ReplaceScriptData("mods/Heist Weather Changer/scriptdata/storm.custom_xml", "custom_xml", "units/pd2_dlc_rvd/environments/pd2_env_rvd/pd2_env_rvd_day1_inside", "environment")
+			BeardLib:ReplaceScriptData("mods/Heist Weather Changer/scriptdata/storm.custom_xml", "custom_xml", "units/pd2_dlc_rvd/environments/pd2_env_rvd/pd2_env_rvd_day1_exterior", "environment")
+			BeardLib:ReplaceScriptData("mods/Heist Weather Changer/scriptdata/storm.custom_xml", "custom_xml", "units/pd2_dlc_rvd/environments/pd2_env_rvd/pd2_env_rvd_day2_inside", "environment")
+			BeardLib:ReplaceScriptData("mods/Heist Weather Changer/scriptdata/storm.custom_xml", "custom_xml", "units/pd2_dlc_rvd/environments/pd2_env_rvd/pd2_env_rvd_day2_exterior", "environment")
+			BeardLib:ReplaceScriptData("mods/Heist Weather Changer/scriptdata/storm.custom_xml", "custom_xml", "units/pd2_dlc_brb/environments/pd2_env_brb_interior_bank", "environment")
+			BeardLib:ReplaceScriptData("mods/Heist Weather Changer/scriptdata/storm.custom_xml", "custom_xml", "units/pd2_dlc_brb/environments/pd2_env_brb_exterior_v4", "environment")
+			BeardLib:ReplaceScriptData("mods/Heist Weather Changer/scriptdata/storm.custom_xml", "custom_xml", "units/pd2_dlc_dah/environments/pd2_dah_outdoor/pd2_dah_outdoor", "environment")
 			BeardLib:ReplaceScriptData("mods/Heist Weather Changer/scriptdata/storm.custom_xml", "custom_xml", "environments/pd2_env_lxy_gala_01/pd2_env_lxy_gala_01", "environment")
 			BeardLib:ReplaceScriptData("mods/Heist Weather Changer/scriptdata/storm.custom_xml", "custom_xml", "environments/pd2_env_lxy_gala_02/pd2_env_lxy_gala_02", "environment")
 			BeardLib:ReplaceScriptData("mods/Heist Weather Changer/scriptdata/storm.custom_xml", "custom_xml", "environments/pd2_env_lxy_lowerdeck_01/pd2_env_lxy_lowerdeck_01", "environment")
