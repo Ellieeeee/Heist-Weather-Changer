@@ -16,11 +16,6 @@ function LevelsTweakData:init(tweak_data)
     if Global.load_level == true and rain and not PackageManager:loaded("packages/narr_glace") then
     PackageManager:load( "packages/narr_glace" )
     end
-    
-    --screendrop package
-    if (Global.load_level == true and rain and ROAH.Options:GetValue("enable_screendrops")) and not PackageManager:loaded("levels/narratives/classics/glace/world/world") then
-    PackageManager:load( "levels/narratives/classics/glace/world/world")
-    end
 
 if Global.load_level == true then
     for _, entry_name in ipairs(self._level_index) do
@@ -28,7 +23,6 @@ if Global.load_level == true then
                 if rain then
                     self[entry_name].environment_effects = {
                         "rain",
-                        "raindrop_screen",
                         "lightning"
                     }
                 elseif snow then

@@ -3,7 +3,7 @@
 	"description" : "Changes every map's environment to either be in a rain storm or snowing.",
 	"author" : "Ellie",
 	"contact" : "",
-	"version" : "1.75",
+	"version" : "1.8",
 	"blt_version" : 2,
     "image" : "rain.png",
     "color" : "220 220 0",
@@ -15,12 +15,5 @@
 	],
 	"pre_hooks" : [
         { "hook_id" : "lib/entry", "script_path" : "Core.lua" }
-    ],
-    "libraries" : [
-        {
-            "display_name" : "BeardLib",
-            "identifier" : "beardlib",
-            "optional" : "false"
-        }
-    ]		
+    ]	
 }
