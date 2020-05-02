@@ -8,6 +8,14 @@
     "image" : "rain.png",
     "color" : "220 220 0",
 	"priority" : 0,
+	"updates" : [
+		{
+			"identifier" : "HeistWeatherChanger",
+			"host" : {
+				"meta" : "x"
+			}
+		}
+	]
 	"pre_hooks" : [
         { "hook_id" : "lib/entry", "script_path" : "Core.lua" }
     ]	
