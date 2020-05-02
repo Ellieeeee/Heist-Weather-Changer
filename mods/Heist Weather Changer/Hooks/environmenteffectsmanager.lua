@@ -93,7 +93,7 @@ if snow then
 	local outside = false
 	local _snoweffectloopdelay = 0
 	local inside_delay = 1
-	function SnowEffect:update(t, dt)
+	function RainEffect:update(t, dt)
 		local vp = managers.viewport:first_active_viewport()
 		if vp and self._vp ~= vp then
 			vp:vp():set_post_processor_effect("World", ids_snow_post_processor, ids_snow_ripples)

@@ -8,11 +8,6 @@
     "image" : "rain.png",
     "color" : "220 220 0",
 	"priority" : 0,
-	"updates" : [
-		{
-			"identifier" : "rain_on_all_heists"
-		}
-	],
 	"pre_hooks" : [
         { "hook_id" : "lib/entry", "script_path" : "Core.lua" }
     ]	

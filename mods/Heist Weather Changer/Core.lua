@@ -64,7 +64,7 @@ end
 
 --disable all weather effects always if level is green bridge, alaska, brooklyn bank, shacklethorne, no mercy, or the new safehouse (memory issues)
 local map = Global.load_level and Global.level_data.level_id
-if map == "glace" or map == "wwh" or map == "chill" or map == "chill_combat" or map == "brb" or map == "sah" or map == "nmh" then
+if map == "glace" or map == "wwh" or map == "chill" or map == "chill_combat" or map == "brb" or map == "sah" or map == "nmh" or map == "vit" then
 	rain = false
 	snow = false
 end
