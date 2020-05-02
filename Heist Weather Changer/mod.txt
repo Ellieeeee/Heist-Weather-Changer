@@ -12,7 +12,7 @@
 		{
 			"identifier" : "HeistWeatherChanger",
 			"host" : {
-				"meta" : "x"
+				"meta" : "https://raw.githubusercontent.com/Ellieeeee/Heist-Weather-Changer/master/mods/Heist%20Weather%20Changer/meta.json"
 			}
 		}
 	]
