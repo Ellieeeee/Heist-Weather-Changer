@@ -23,9 +23,9 @@ if ROAH.Options:GetValue("enable_skybox") then
 			--if environment is defined to something else through the globals, do shit. otherwise chill
 			if environment then
 				--res dogs
-				--BeardLib:ReplaceScriptData(environment, "custom_xml", "units/pd2_dlc_rvd/environments/pd2_env_rvd/pd2_env_rvd_day1_inside", "environment")
+				BeardLib:ReplaceScriptData(environment, "custom_xml", "units/pd2_dlc_rvd/environments/pd2_env_rvd/pd2_env_rvd_day1_inside", "environment")
 				BeardLib:ReplaceScriptData(environment, "custom_xml", "units/pd2_dlc_rvd/environments/pd2_env_rvd/pd2_env_rvd_day1_exterior", "environment")
-				--BeardLib:ReplaceScriptData(environment, "custom_xml", "units/pd2_dlc_rvd/environments/pd2_env_rvd/pd2_env_rvd_day2_inside", "environment")
+				BeardLib:ReplaceScriptData(environment, "custom_xml", "units/pd2_dlc_rvd/environments/pd2_env_rvd/pd2_env_rvd_day2_inside", "environment")
 				BeardLib:ReplaceScriptData(environment, "custom_xml", "units/pd2_dlc_rvd/environments/pd2_env_rvd/pd2_env_rvd_day2_exterior", "environment")
 
 				--brooklyn bank
@@ -53,8 +53,8 @@ if ROAH.Options:GetValue("enable_skybox") then
 				--worst heist (car shop)
 				BeardLib:ReplaceScriptData(environment, "custom_xml", "environments/pd2_cage/pd2_cage", "environment")
 				BeardLib:ReplaceScriptData(environment, "custom_xml", "environments/pd2_cage_docks/pd2_cage_docks", "environment")
-				--BeardLib:ReplaceScriptData(environment, "custom_xml", "environments/pd2_cage_indoor/pd2_cage_indoor", "environment")
-				--BeardLib:ReplaceScriptData(environment, "custom_xml", "environments/pd2_cage_indoor2/pd2_cage_indoor2", "environment")
+				BeardLib:ReplaceScriptData(environment, "custom_xml", "environments/pd2_cage_indoor/pd2_cage_indoor", "environment")
+				BeardLib:ReplaceScriptData(environment, "custom_xml", "environments/pd2_cage_indoor2/pd2_cage_indoor2", "environment")
 
 				--safehouse shit
 				BeardLib:ReplaceScriptData(environment, "custom_xml", "environments/pd2_chl_chill_01/pd2_chl_chill_01", "environment")
@@ -190,7 +190,7 @@ if ROAH.Options:GetValue("enable_skybox") then
 				BeardLib:ReplaceScriptData(environment, "custom_xml", "environments/pd2_kosugi/pd2_kosugi", "environment")
 
 				--boiling point
-				BeardLib:ReplaceScriptData(environment, "custom_xml", "environments/pd2_mad_lab/pd2_mad_lab", "environment")
+				--BeardLib:ReplaceScriptData(environment, "custom_xml", "environments/pd2_mad_lab/pd2_mad_lab", "environment")
 				BeardLib:ReplaceScriptData(environment, "custom_xml", "environments/pd2_mad_outdoor/pd2_mad_outdoor", "environment")
 
 				--undercover
@@ -223,7 +223,7 @@ if ROAH.Options:GetValue("enable_skybox") then
 				BeardLib:ReplaceScriptData(environment, "custom_xml", "environments/pd2_res/pd2_res", "environment")
 
 				--meme street
-				--BeardLib:ReplaceScriptData(environment, "custom_xml", "environments/pd2_run/run_inside", "environment")
+				BeardLib:ReplaceScriptData(environment, "custom_xml", "environments/pd2_run/run_inside", "environment")
 				BeardLib:ReplaceScriptData(environment, "custom_xml", "environments/pd2_run/run_outside", "environment")
 
 				--border crossing
@@ -241,7 +241,7 @@ if ROAH.Options:GetValue("enable_skybox") then
 
 				--san martin
 				BeardLib:ReplaceScriptData(environment, "custom_xml", "environments/pd2_env_bex/ext/pd2_env_bex_ext", "environment")
-				--BeardLib:ReplaceScriptData(environment, "custom_xml", "environments/pd2_env_bex/int/pd2_env_bex_int", "environment")
+				BeardLib:ReplaceScriptData(environment, "custom_xml", "environments/pd2_env_bex/int/pd2_env_bex_int", "environment")
 				--BeardLib:ReplaceScriptData(environment, "custom_xml", "environments/pd2_env_bex/int_vault/pd2_env_bex_int_vault", "environment")
 
 
