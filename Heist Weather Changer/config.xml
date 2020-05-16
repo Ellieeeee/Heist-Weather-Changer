@@ -1,6 +1,5 @@
 <mod name="rain_on_all_heists" global_key="ROAH">
     <Hooks directory="Hooks">
-        <hook file="criminalsmanager.lua" source_file="lib/managers/criminalsmanager"/>
         <hook file="coresequencemanager.lua" source_file="core/lib/managers/coresequencemanager"/>
         <hook file="levelstweakdata.lua" source_file="lib/tweak_data/levelstweakdata"/>
         <hook file="environmenteffectsmanager.lua" source_file="lib/managers/environmenteffectsmanager"/>
