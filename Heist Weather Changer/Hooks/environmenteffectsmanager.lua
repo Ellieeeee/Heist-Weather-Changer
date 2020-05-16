@@ -1,7 +1,4 @@
 -- RAIN
-
-
-
 if rain then
 	local ids_rain_post_processor = Idstring("rain_post_processor")
 	local ids_rain_ripples = Idstring("rain_ripples")
@@ -40,7 +37,7 @@ if rain then
 		mvector3.set(mvec_to, -normal)
 		mvector3.multiply( mvec_to, 20000000000 )
 		mvector3.add(mvec_to, c_pos)
-		local col_rayy = World:raycast("ray", c_pos + Vector3(0, 0, 5000000), mvec_to, "slot_mask", managers.slot:get_mask("bullet_impact_targets" ))
+		local col_rayy = World:raycast("ray", c_pos + Vector3(0, 0, 5000000), mvec_to, "slot_mask", managers.slot:get_mask("world_geometry" ))
 		if col_rayy and mvector3.distance_sq(col_rayy.hit_position, c_pos) < 22000 then
 		--player is outside in the rain
 			--probably the dumbest way possible to do it but idc, if outside set our inside timer to current time + 1
@@ -115,7 +112,7 @@ if snow then
 		mvector3.set(mvec_to, -normal)
 		mvector3.multiply( mvec_to, 20000000000 )
 		mvector3.add(mvec_to, c_pos)
-		local col_rayy = World:raycast("ray", c_pos + Vector3(0, 0, 5000000), mvec_to, "slot_mask", managers.slot:get_mask("bullet_impact_targets" ))
+		local col_rayy = World:raycast("ray", c_pos + Vector3(0, 0, 5000000), mvec_to, "slot_mask", managers.slot:get_mask("world_geometry" ))
 		if col_rayy and mvector3.distance_sq(col_rayy.hit_position, c_pos) < 22000 then
 		--player is outside in the snow
 			--probably the dumbest way possible to do it but idc, if outside set our inside timer to current time + 1
@@ -136,7 +133,7 @@ if snow then
 				if inside == false then
 					inside_delay = t + 1
 					if Utils:IsInHeist() and Utils:IsInCustody() == false and game_state_machine then
-						managers.player:player_unit():sound():play("ambience_int_office_small", nil, false)
+						managers.player:player_unit():sound():play("ambience_int_office_medium", nil, false)
 						vp:vp():set_post_processor_effect("World", ids_snow_post_processor, ids_snow_off)
 						outside = false
 						inside = true

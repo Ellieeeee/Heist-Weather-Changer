@@ -1,4 +1,4 @@
-<!--test-->
+<!--night skybox-->
 <table directory="assets">
 	<texture path="core/environments/skies/sky_night_storm/sky_night_storm"/>
 	<scene path="core/environments/skies/sky_night_storm/sky_night_storm"/>
