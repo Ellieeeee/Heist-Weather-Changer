@@ -37,6 +37,25 @@ function RainOnAllHeistsCore:init()
 		"escape_overpass_night", --escape overpass
 		"kenaz", --ggc
 		"bph", --hell's island
+		"dah", --diamond heist
+		"nail", --lab rats
+		"haunted" --safehouse nightmare
+	}
+
+	--table for heists we just want to disable everything on for one reason or another
+	RainOnAllHeistsCore.fuck_this_shit = {
+		"glace", --green bridge (duh)
+		"wwh", --alaskan deal (duh)
+		"sah", --shacklethorne (duh)
+		"brb", --brooklyn bank (duh)
+		"tag", --breakin' feds (indoor only)
+		"nmh",  --no mercy (indoor only)
+		"hox_2", --hox brekaout 2 (indoor only)
+		"arena", --alesso (indoor only)
+		"chill", --new safehouse because holy FUCK oom crashes
+		"chill_combat", --ditto, but the raid
+		"nail", --lab rats
+		"haunted" --safehouse nightmare
 	}
 end
 
@@ -103,8 +122,11 @@ if rain and snow then
 	end
 end
 
---disable all weather effects always if level is green bridge/alaskan deal/brooklyn bank/shacklethorne (all have weather already), breaking feds/no mercy/hox 2/alesso (only indoors), or the new safehouse (memory issues)
-if map == "glace" or map == "wwh" or map == "chill" or map == "chill_combat" or map == "brb" or map == "sah" or map == "tag" or map == "nmh" or map == "hox_2" or map == "arena" then
-	rain = false
-	snow = false
+--disable all weather effects always if level is in the table above
+--this is to prevent near guaranteed crashes or pointless memory usage/weird effects (if the heist is only indoors, there's obviously no weather)
+for _,bs in pairs(RainOnAllHeistsCore.fuck_this_shit) do
+	if map == bs then
+		rain = false
+		snow = false
+	end
 end

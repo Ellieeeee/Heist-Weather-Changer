@@ -3,7 +3,7 @@
 	"description" : "Changes every map's environment to either be in a rain storm or snowing.",
 	"author" : "Ellie",
 	"contact" : "",
-	"version" : "1.81",
+	"version" : "1.82",
 	"blt_version" : 2,
     "image" : "rain.png",
     "color" : "220 220 0",
