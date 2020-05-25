@@ -37,9 +37,7 @@ function RainOnAllHeistsCore:init()
 		"escape_overpass_night", --escape overpass
 		"kenaz", --ggc
 		"bph", --hell's island
-		"dah", --diamond heist
-		"nail", --lab rats
-		"haunted" --safehouse nightmare
+		"dah" --diamond heist
 	}
 
 	--table for heists we just want to disable everything on for one reason or another
@@ -55,7 +53,8 @@ function RainOnAllHeistsCore:init()
 		"chill", --new safehouse because holy FUCK oom crashes
 		"chill_combat", --ditto, but the raid
 		"nail", --lab rats
-		"haunted" --safehouse nightmare
+		"haunted", --safehouse nightmare
+		"red2" --first world bank (indoor only, the 5 seconds outside doesnt count)
 	}
 end
 
@@ -104,7 +103,7 @@ if ROAH.Options:GetValue("enable_rain") then
 end
 
 if ROAH.Options:GetValue("enable_snow") then
-	if RainRNGesus <= (ROAH.Options:GetValue("chance_snow") or 0) then
+	if SnowRNGesus <= (ROAH.Options:GetValue("chance_snow") or 0) or map == "mad" then
 		snow = true
 	end
 end

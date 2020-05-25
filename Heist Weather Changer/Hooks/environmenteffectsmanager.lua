@@ -4,7 +4,7 @@ if rain then
 	local ids_rain_ripples = Idstring("rain_ripples")
 	local ids_rain_off = Idstring("rain_off")
 	local ripple_fix = false
-	local map = Global.level_data.level_id
+	local map = Global.load_level and Global.level_data.level_id
 	--lazy terrible fix for these levels having droplets indoors
 	--causes droplets to pop in but what the fuck else can i do?
 	if map == "fish" or map == "arena" or map == "mus" or map == "red2" or map == "pbr" or map == "big" or map == "hox_2" then

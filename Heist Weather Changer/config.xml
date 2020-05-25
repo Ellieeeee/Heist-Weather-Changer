@@ -3,6 +3,7 @@
         <hook file="coresequencemanager.lua" source_file="core/lib/managers/coresequencemanager"/>
         <hook file="levelstweakdata.lua" source_file="lib/tweak_data/levelstweakdata"/>
         <hook file="environmenteffectsmanager.lua" source_file="lib/managers/environmenteffectsmanager"/>
+        <hook file="criminalsmanager.lua" source_file="lib/managers/criminalsmanager"/>
     </Hooks>
 
     <Localization directory="Localization" default="english.txt">
@@ -18,6 +19,7 @@
                 <option type="number" default_value="50" min="0" max="100" name="chance_rain" step="5" show_value="true" title_id="ROAH_Options_Chance_Rain_Title" desc_id="ROAH_Options_Chance_Rain_Desc"/>
                 <option type="bool" default_value="true" name="enable_skybox" title_id="ROAH_Options_Enable_Skybox_Title" desc_id="ROAH_Options_Enable_Skybox_Desc"/>
                 <option type="number" default_value="50" min="0" max="100" name="chance_night" step="5" show_value="true" title_id="ROAH_Options_Chance_Night_Title" desc_id="ROAH_Options_Chance_Night_Desc"/>
+                <option type="bool" default_value="false" name="change_outfit" title_id="ROAH_Options_Change_Outfit_Title" desc_id="ROAH_Options_Change_Outfit_Desc"/>
         </options>
     </Options>
     <AddFiles file="add.xml"/>

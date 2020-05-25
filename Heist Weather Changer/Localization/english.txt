@@ -10,16 +10,10 @@
 	"ROAH_Options_Enable_Rain_Desc" : "Enables the rain.",
 	"ROAH_Options_Chance_Rain_Title" : "Rain Chance",
 	"ROAH_Options_Chance_Rain_Desc" : "Set the chance of the heist having rain. If both effects are on it will pick one at random.",
-	"ROAH_Options_Enable_Screendrops_Title" : "Screendrops",
-	"ROAH_Options_Enable_Screendrops_Desc" : "Enables raindrops on the screen. Note: Requires rain to be active.",
 	"ROAH_Options_Enable_Skybox_Title" : "Skybox",
 	"ROAH_Options_Enable_Skybox_Desc" : "Enables the skybox changes for the different weather.",
 	"ROAH_Options_Chance_Night_Title" : "Night Chance",
 	"ROAH_Options_Chance_Night_Desc" : "Set the chance of the heist being at night. Note: Requires Skybox toggle to be active.",
-	"ROAH_Options_Enable_Coats_Title" : "Coats",
-	"ROAH_Options_Enable_Coats_Desc" : "Enables rain/winter coats.",
-	"ROAH_Options_Enable_Sneak_Title" : "Sneak Suits",
-	"ROAH_Options_Enable_Sneak_Desc" : "Enables sneaking suits, will replace coats.",
-	"ROAH_Options_Enable_Coats_On_Rain_Title" : "Coats only in weather",
-	"ROAH_Options_Enable_Coats_On_Rain_Desc" : "Only enable coats when there are weather effects, requires rain/snow and coats toggle to be active."
+	"ROAH_Options_Change_Outfit_Title" : "Change player outfit",
+	"ROAH_Options_Change_Outfit_Desc" : "Will change everyone's outfits (clientside) to match the current weather."
 }
