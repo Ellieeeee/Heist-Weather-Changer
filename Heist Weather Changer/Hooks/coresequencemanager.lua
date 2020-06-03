@@ -22,6 +22,9 @@ if ROAH.Options:GetValue("enable_skybox") then
 
 			--if environment is defined to something else through the globals, do shit. otherwise chill
 			if environment then
+				--meltdown
+				BeardLib:ReplaceScriptData(environment, "custom_xml", "environments/pd2_shoutoutraid_indoor/pd2_shoutoutraid_indoor", "environment")
+
 				--res dogs
 				BeardLib:ReplaceScriptData(environment, "custom_xml", "units/pd2_dlc_rvd/environments/pd2_env_rvd/pd2_env_rvd_day1_inside", "environment")
 				BeardLib:ReplaceScriptData(environment, "custom_xml", "units/pd2_dlc_rvd/environments/pd2_env_rvd/pd2_env_rvd_day1_exterior", "environment")
