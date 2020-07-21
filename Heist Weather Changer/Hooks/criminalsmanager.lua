@@ -6,8 +6,8 @@ if ROAH.Options:GetValue("change_outfit") and Global.load_level then
     --if rain is on (or green bridge), put on the raincoats
     if rain or map == "glace" then
         raincoat = true
-    --otherwise, if snow is on (or alaskan deal/brooklyn bank), put on the snowcoats
-    elseif snow or map == "wwh" or map == "brb" then
+    --otherwise, if snow is on (or alaskan deal), put on the snowcoats
+    elseif snow or map == "wwh" then
         snowcoat = true
     end
         
